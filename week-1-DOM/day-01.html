@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="status">Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Temporibus animi quisquam eaque aut totam exercitationem cumque incidunt dolor velit asperiores alias, qui voluptates in, neque, iure unde reiciendis autem laborum.</p>
+
+    <button id="btn">status</button>
+
+    <script>
+      
+    //   Option 1
+    //   document.getElementById('btn').addEventListener('click', () => {
+    //     document.getElementById('status').textContent = "Junaid Syed"
+    //   })
+
+    //   Option 2 using const
+    const btn = document.getElementById('btn');
+    const statusPara = document.getElementById('status');
+
+    btn.addEventListener('click', () => {
+        statusPara.textContent += " Junaid syed"
+    })
+
+    // Lets use inneerHTML
+    // const btn = document.getElementById('btn');
+    // const statusPara = document.getElementById('status')
+
+    // btn.addEventListener('click', () => {
+    //     statusPara.innerHTML += " Junaid syed"
+    // })
+
+
+    </script>
+</body>
+</html>
