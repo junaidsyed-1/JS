@@ -2,7 +2,15 @@
 
 - This week is going to be mainly focused on DOM. We are going re-learn about DOM.
 
-# Breif about topics we learned each day
+## Topics covered this week
+- Day-1
+  - DOM BASICS
+  - getElementByID
+  - querySelector
+  - textContent
+  - innerHTML
+
+# Breif about topics we learn each day
 
 ## Day-1
 
@@ -25,4 +33,4 @@ Return => Element object, NOTE: "?" is not allowed is CSS identifires.
   - innderHTML is a property of the node/Document interface gets or sets the HTML or XML markup contained within the elements. But also if we use innerHTML there is a security risk, we might need to use libraby to sanitize. when setting element content using innerHTML, the HTML string is parsed into DOM elements that do not contain shadow roots.
 
 
-## Note: I have started JS again just re-learn we will utilize 1 hour daily, and each week we will new topics.
+## Note: I have started JS again just to re-learn, We will utilize 1 hour daily, and each week we will learn new topics.
