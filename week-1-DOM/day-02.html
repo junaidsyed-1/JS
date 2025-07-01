@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="counter">0</p>
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button>
+
+        <br />
+    <input type="text" placeholder="Add some text" id="inp" />
+    <p id="text"></p>
+
+    <script>
+        let count = 0
+
+        const increment = document.getElementById('inc');
+        const decrement = document.getElementById('dec');
+        const counter = document.getElementById('counter')
+        const text = document.getElementById("text");
+        const inp = document.getElementById('inp');
+
+        increment.addEventListener('click', () => {
+            count++
+            counter.textContent = count;
+        })
+
+        decrement.addEventListener('click', () => {
+            count--;
+            counter.textContent = count;
+        })
+
+        inp.addEventListener("input", handleChange);
+
+        function handleChange (e) {
+            text.textContent = e.target.value
+        }
+
+    </script>
+
+</body>
+</html>

@@ -9,6 +9,10 @@
   - querySelector
   - textContent
   - innerHTML
+- Day-2
+  - addEventListener
+  - Input Event
+  - Click Event
 
 # Breif about topics we learn each day
 
@@ -31,6 +35,23 @@ Return => Element object, NOTE: "?" is not allowed is CSS identifires.
 
 - What is innerHTML?
   - innderHTML is a property of the node/Document interface gets or sets the HTML or XML markup contained within the elements. But also if we use innerHTML there is a security risk, we might need to use libraby to sanitize. when setting element content using innerHTML, the HTML string is parsed into DOM elements that do not contain shadow roots.
+
+## Day 2
+
+- What is addEventListener?
+  - addEventListener is a method of the EventTarget interface sets up a function which can be called whenever the event is delivered to the target. Common Targets and 'element' and its children, Document, Window and any other object that supports the events.
+  Syntax => addEventListener(type, listener, options/useCapture)
+
+- What is input event?
+  - Input Event fires when the "value" of the "input" changes or the value of "<select>", "<textarea>" element changes as a direct result of a user action.
+    - For <textarea> and <input> elements that accept text input the interface is "InputEvent" for others the interface is Event.
+    - The input event is fired every time the value changes of the element, unlike the "change" event, which only fires when the value is committed, such as by pressing enter of submitting.
+    - Syntax: addEventListener("input", function(e)).
+
+-  What is click event?
+  - Click event fires as soon as there is a activity which invloves any click on the screen:
+    - It could be a pointing-device button is pressed and released while the pointer is located inside the element which has the event.
+    - Any User interaction that is equivalent to a click, such as pressing the space key or Enter Key.
 
 
 ## Note: I have started JS again just to re-learn, We will utilize 1 hour daily, and each week we will learn new topics.
