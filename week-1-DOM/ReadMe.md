@@ -48,7 +48,7 @@ Return => Element object, NOTE: "?" is not allowed is CSS identifires.
     - The input event is fired every time the value changes of the element, unlike the "change" event, which only fires when the value is committed, such as by pressing enter of submitting.
     - Syntax: addEventListener("input", function(e)).
 
--  What is click event?
+- What is click event?
   - Click event fires as soon as there is a activity which invloves any click on the screen:
     - It could be a pointing-device button is pressed and released while the pointer is located inside the element which has the event.
     - Any User interaction that is equivalent to a click, such as pressing the space key or Enter Key.
