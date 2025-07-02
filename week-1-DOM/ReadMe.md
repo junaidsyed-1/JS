@@ -13,6 +13,10 @@
   - addEventListener
   - Input Event
   - Click Event
+- Day-3
+  - createElemet
+  - appendChild
+  - removeChild
 
 # Breif about topics we learn each day
 
@@ -49,9 +53,26 @@ Return => Element object, NOTE: "?" is not allowed is CSS identifires.
     - Syntax: addEventListener("input", function(e)).
 
   - What is click event?
-    Click event fires as soon as there is a activity which invloves any click on the screen:
+  - Click event fires as soon as there is a activity which invloves any click on the screen:
     - It could be a pointing-device button is pressed and released while the pointer is located inside the element which has the event.
     - Any User interaction that is equivalent to a click, such as pressing the space key or Enter Key.
 
+## Day 3
+
+- What is createElemet?
+  - createElemet is a document method which creates a HTML element.
+  Syntax => createElemet(localName)
+
+- What is appendChild?
+  - appendChild is a method of Node interface which adds a node to the end of the list of children of a specified parent node.
+  Syntax => appendChild(aChild)
+
+- What is removeChild?
+  - removeChild is a method of Node interface which removes a node from the DOM and returns the removed node.
+  Syntax => removeChild(child)
+
+- BONUS: Difference between Node and Document:
+  - Node: Node is the base class interface for many DOM API objects. Every kind of DOM node (like elements, text, comments, etc.) is represented by an interface based on Node.
+  - Document: Document is a specific type of Node that represents the entire HTML or XML document. It is the root node from which all other nodes (elements, text, etc.) descend.
 
 ## Note: I have started JS again just to re-learn, We will utilize 1 hour daily, and each week we will learn new topics.

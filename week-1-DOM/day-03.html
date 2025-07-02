@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" id="taskInput" />
+<button id="addTaskBtn">Add</button>
+<br />
+
+<ul id="taskList"></ul>
+
+<script>
+    const taskInput = document.getElementById('taskInput');
+    const addTaskBtn = document.getElementById('addTaskBtn');
+    const taskList = document.getElementById('taskList');
+
+    addTaskBtn.addEventListener('click', addTask);
+
+    function addTask() {
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = "Delete";
+
+        const listItem = document.createElement('li');
+        listItem.textContent = taskInput.value;
+        listItem.appendChild(deleteBtn);
+        taskList.appendChild(listItem);
+
+        deleteBtn.addEventListener('click', () => {
+            taskList.removeChild(listItem);
+        });
+
+        taskInput.value = ""; 
+    }
+</script>
+
+</body>
+</html>
