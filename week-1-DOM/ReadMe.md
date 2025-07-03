@@ -17,6 +17,9 @@
   - createElemet
   - appendChild
   - removeChild
+-Day-4
+  - preventDefault
+  - Form validation
 
 # Breif about topics we learn each day
 
@@ -74,5 +77,13 @@ Return => Element object, NOTE: "?" is not allowed is CSS identifires.
 - BONUS: Difference between Node and Document:
   - Node: Node is the base class interface for many DOM API objects. Every kind of DOM node (like elements, text, comments, etc.) is represented by an interface based on Node.
   - Document: Document is a specific type of Node that represents the entire HTML or XML document. It is the root node from which all other nodes (elements, text, etc.) descend.
+
+## Day 4
+
+- What is preventDefault?
+  - preventDefault is a method of the Event interface to block the default actions of the event. But if we pass preventDefault to a non-cancellable event then it will not stop that event. 
+  Syntax => preventDefault(), Return Value => None(undefined)
+
+- Basic Form validation
 
 ## Note: I have started JS again just to re-learn, We will utilize 1 hour daily, and each week we will learn new topics.
