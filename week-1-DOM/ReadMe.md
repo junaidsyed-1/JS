@@ -17,7 +17,7 @@
   - createElemet
   - appendChild
   - removeChild
--Day-4
+- Day-4
   - preventDefault
   - Form validation
 
