@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Build a stopwatch:
+        Start, Stop, Reset buttons
+        Display time in 00:00:00 format
+        Use setInterval for counting seconds
+        Use clearInterval to stop timer -->
+ 
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+    <p id="display">Time: <span id="data">00:00:00</span> </p>
+    
+
+    <script>
+        const startBtn = document.getElementById('start');
+        const stopBtn = document.getElementById('stop');
+        const resetBtn = document.getElementById('reset');
+        let timerData = document.getElementById('data');
+
+        let seconds = 0;
+        let intervalID = null;
+
+        function formatTime(seconds) {
+            const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+            const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+            const secs = String(seconds % 60).padStart(2, '0');
+            return `${hrs}:${mins}:${secs}`;
+        };
+
+        function updateDisplay () {
+            timerData.textContent = formatTime(seconds);
+        };
+
+        startBtn.addEventListener('click', () => {
+            if( intervalID !== null) return;
+            intervalID = setInterval(() => {
+                seconds++;
+                updateDisplay();
+            },1000)
+        });
+
+        stopBtn.addEventListener('click', () => {
+            clearInterval(intervalID);
+            intervalID = null;
+        });
+
+        resetBtn.addEventListener( 'click',() => {
+            clearInterval(intervalID);
+            intervalID = null;
+            seconds = 0;
+            updateDisplay();
+        });
+
+        updateDisplay();
+
+    </script>
+
+</body>
+</html>

@@ -20,6 +20,10 @@
 - Day-4
   - preventDefault
   - Form validation
+- Day-5
+  - setTimeout
+  - setInterval
+  - clearInterval
 
 # Breif about topics we learn each day
 
@@ -85,5 +89,24 @@ Return => Element object, NOTE: "?" is not allowed is CSS identifires.
   Syntax => preventDefault(), Return Value => None(undefined)
 
 - Basic Form validation
+
+## Day 5
+
+- What is setTimeout?
+  - setTimeout is a method of the "window" interface which sets a timer, it executes the function or a piece of code as soon as the timer expires.
+  Syntax => setTimeout(code/function, delay)
+  - Return Value => The setTimeout return a postitive integer(within the range of 1 to 2billion), that uniquely identifies the timer created, hence it is often referred as timeout ID.
+  - Timeouts are cancellabe usign window.clearTimeout().
+  - setTimeout is called with "delay", but for instance if the value of the delay is not a number but a string like this: "1000" then JS does implicit type coercion and that string will be coerced into a number.
+  - setTimeout is asynchronous function which implies that the function will not block the main thread and it will actaully go to the event loop and inside CallBack queue and will wait until the call stack is empty.
+
+- What is setInterval?
+  - setInterval is a method of the window which call the function or a piece of code repeatedly after the delay, which is fixed in the interval.
+  Syntax => setInterval(code/function, delay)
+  - Same as timeout setInterval returna a positive integer within the same range as setTimeout, and is also known as interval ID.
+
+- what is clearInterval/clearTimeout?
+  - They both are a method of window iterface which cancels the timer, which was established by a setTimeout/setInterval.
+  Syntax => clearInterval(timerID)/ clearTimeout(timerID)
 
 ## Note: I have started JS again just to re-learn, We will utilize 1 hour daily, and each week we will learn new topics.
