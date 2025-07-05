@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Mini Project -->
+     <!-- A "Task + Timer" app
+     Create tasks → Assign timers → Start/stop individual countdowns -->
+
+     <h1>Task App with timer</h1>
+
+     <section>
+         <input type="text" id="inp" />
+         <button id="addTask">Add Task</button>
+     </section>
+    <section>
+        <ul id="tasks">
+            <!-- <li>Task 1 <button>Start Timer</button> <span>00:00:00</span></li> -->
+        </ul>
+    </section>
+
+    <script>
+        const inp = document.getElementById('inp');
+        const addTaskBtn = document.getElementById('addTask');
+        const addTask = document.getElementById('tasks');
+
+        addTaskBtn.addEventListener('click', addTaskItems);
+
+        function addTaskItems () {
+            const taskName = inp.value.trim();
+            if(!taskName) return;
+
+            const li = document.createElement('li');
+            const startBtn = document.createElement('button');
+            const timerDisplay = document.createElement('span');
+
+            startBtn.textContent = "Start Timer";
+            timerDisplay.textContent = "00:00:00";
+
+            let seconds = 0;
+            let intervalId = null;
+
+            startBtn.addEventListener('click', () => {
+                if(startBtn.textContent === "Start Timer") {
+                    startBtn.textContent = "Stop Timer";                    
+                    intervalId = setInterval(() => {
+                        seconds++;
+                        timerDisplay.textContent = formatTime(seconds)
+                    },1000);
+                } else {
+                    startBtn.textContent = "Start Timer";
+                    clearInterval(intervalId);
+                }
+            });
+
+            li.textContent =  taskName + " ";
+            li.appendChild(startBtn);
+            li.appendChild(document.createTextNode(' '));
+            li.appendChild(timerDisplay);
+
+            addTask.appendChild(li)
+            inp.value = "";
+        };
+
+        function formatTime(seconds) {
+            const hrs = String(Math.floor( seconds / 3600 )).padStart(2, '0');
+            const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+            const secs = String(seconds % 60).padStart(2, '0');
+            return `${hrs}:${mins}:${secs}`;
+        }
+
+    </script>
+ 
+
+    
+</body>
+</html>
