@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- - Tasks
+        - Build an array of 10 numbers
+        - Write functions:
+        - return sum of array
+        - return max value
+        - remove duplicates
+        - reverse array (without .reverse) -->
+    <script>
+      // Task 1
+      const arr = [1, 2, 4, 5, 3, 6, 9, 8, 0];
+
+      // return the sum of the Array
+      const sumOfArr = (arr) => {
+        let sum = 0;
+        arr.forEach((element) => {
+          sum += element;
+        });
+        return sum;
+      };
+      console.log(sumOfArr(arr));
+
+      // return Max Value
+      const maxValArr = (arr) => {
+        let max = arr[0];
+        arr.forEach((element) => {
+          if (max < element) {
+            max = element;
+          }
+        });
+        return max;
+      };
+      console.log(maxValArr(arr));
+
+      // remove duplicates
+      const removeDuplicate = (arr) => {
+        const unique = [];
+        arr.forEach((ele) => {
+          if (!unique.includes(ele)) {
+            unique.push(ele);
+          }
+        });
+        return unique;
+      };
+      console.log(removeDuplicate(arr));
+
+      // reverse Array
+      const reverseArr = (arr) => {
+        const res = [];
+        for (let i = arr.length - 1; i >= 0; i--) {
+          res.push(arr[i]);
+        }
+        return res;
+      };
+      console.log(reverseArr(arr));
+    </script>
+  </body>
+</html>
