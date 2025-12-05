@@ -32,6 +32,13 @@
         - remove duplicates
         - reverse array (without .reverse)
 
+- Day-03 Loops + Logical Thinking
+    - Topics
+        - for
+        - while
+        - for...of
+        - Breaking/continuing loops
+
 ## Day-01
 - Function Declarations VS Expressions
     - Function Declaration: is when we declare a function with syntax: function getValue(){}.
