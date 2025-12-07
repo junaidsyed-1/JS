@@ -46,6 +46,20 @@
         - Add/remove properties
         - Loop through object
 
+- Day-05 Mini Project
+    - Build a small project using everything from this week
+    - Features:
+        - Add new students
+        - Remove students
+        - Display all students
+        - Count how many students
+        - Check if student exists
+    - Use:
+        - arrays
+        - objects
+        - functions
+        - loops
+
 ## Day-01
 - Function Declarations VS Expressions
     - Function Declaration: is when we declare a function with syntax: function getValue(){}.

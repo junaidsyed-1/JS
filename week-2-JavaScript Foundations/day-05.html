@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students = [];
+
+        // function to add students
+        const addStudent = (name, age) => {
+            students.push({ name, age });
+            // console.log(`${name} added.`);
+        };
+
+        function removeStudent(name) {
+            for (let i = 0; i < students.length; i++) {
+                if (students[i].name === name) {
+                    students.splice(i, 1); // Remove at index i
+                    console.log(`${name} removed.`);
+                    return;
+                }
+            }
+            console.log(`${name} not found.`);
+        }
+
+        const displayAll = () => {
+            console.log("All Students")
+            for (let student of students) {
+                // console.log(`${student.name}, ${student.age}`);
+                console.log(student)
+            }
+        }
+
+        const getStudents = () => {
+            console.log("Students Count");
+            console.log(students.length)
+        }
+
+        const ifStudent = (name) => {
+            console.log("If student Exists");
+            for (let i = 0; i < students.length; i++) {
+                if (students[i].name === name) {
+                    console.log(`${name} does exist.`);
+                    return true;
+                }
+            }
+            console.log(`${name} does not exist.`);
+            return false
+        }
+
+        addStudent("Junaid", 25);
+        addStudent("Nishant", 26);
+        removeStudent("Junaid");
+        displayAll();
+        getStudents();
+        ifStudent("Nishant");
+        //   console.log(students)
+
+    </script>
+</body>
+
+</html>
