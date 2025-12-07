@@ -39,6 +39,13 @@
         - for...of
         - Breaking/continuing loops
 
+- Day-04 Objects (Very Important)
+    - Topics
+        - Create objects
+        - Access data (dot + bracket)
+        - Add/remove properties
+        - Loop through object
+
 ## Day-01
 - Function Declarations VS Expressions
     - Function Declaration: is when we declare a function with syntax: function getValue(){}.
@@ -69,3 +76,11 @@
 - indexof(): checks if any value in array matches and return the index of the element.
 - splice(): splice is a method which can add,remove replace an element, it can do everything inside an Array. It modifies the acutall Array and does not create a copy.
 - slice(): slice is a method which creates the copy of the transformed Array.
+
+## Day-04
+- What are Objects?
+Objects are key-value containers where keys are string and value can be any data type,including their objects and functions. They are non-primitive data type.
+
+- Accessing data
+    - DOT notation: default when we know the property name at code time.
+    - square Bracket notation: when key is dynamic or not a valid identifier.
