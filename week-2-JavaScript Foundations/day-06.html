@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // - Reverse a string
+        const reverseStr = (str = "junaid") => {
+            // let newStr = "";
+            // for (let i = str.length - 1; i >= 0; i--) {
+            //     // console.log(str[i])
+            //     newStr += str[i]
+            // }
+            // console.log(newStr)
+
+            const newStr = str.split('').reverse().join("")
+            console.log(newStr)
+        }
+        reverseStr()
+        // - Count words
+        const countWords = (str = "junaid is the best trader and coder") => {
+            let count = 0;
+            const words = str.split(" ");
+            for (let i = 0; i < words.length; i++) {
+                count++;
+            }
+            console.log(count)
+        }
+        countWords()
+        // - Check if a string is palindrome
+        const isPalindrome = (str = "racecar") => {
+            const cleanStr = str.toLowerCase().trim();
+            // const reversed = cleanStr.split('').reverse().join('');
+            // return reversed === cleanStr;
+
+            for (let i = 0; i < cleanStr.length / 2; i++) {
+                if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
+                    return false;
+                }
+            }
+            return true;
+
+        }
+        console.log(isPalindrome())
+        // - Capitalize the first letter of every word in a sentence
+        const capitalizeFistLetter = (str = "junaid is the best coder and trader") => {
+
+            let result = "";
+            let capitalizeNext = true;
+
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === " ") {
+                    result += " ";
+                    capitalizeNext = true
+                } else if (capitalizeNext) {
+                    result += str[i].toUpperCase();
+                    capitalizeNext = false;
+                } else {
+                    result += str[i]
+                }
+            }
+            console.log(result);
+        }
+        capitalizeFistLetter()
+        // - Convert a sentence to camelCase
+        const camelCase = ( str = "Junaid is the best coder and trader") => {
+            const words = str.toLowerCase().split(" ");
+            let camelCase = words[0];
+
+            for (let i =1; i < words.length; i++){
+                camelCase += words[i].charAt(0).toUpperCase() + words[i].slice(1)
+            }
+            return camelCase
+        }
+        console.log(camelCase())
+    </script>
+</body>
+
+</html>

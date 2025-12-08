@@ -60,6 +60,21 @@
         - functions
         - loops
 
+- Day-06 Basic String Manipulation
+    - Topics
+        - toUpperCase()
+        - toLowerCase()
+        - trim()
+        - split()
+        - join()
+        - replace()
+    - Tasks
+        - Reverse a string
+        - Count words
+        - Check if a string is palindrome
+        - Capitalize the first letter of every word in a sentence
+        - Convert a sentence to camelCase
+
 ## Day-01
 - Function Declarations VS Expressions
     - Function Declaration: is when we declare a function with syntax: function getValue(){}.
@@ -98,3 +113,12 @@ Objects are key-value containers where keys are string and value can be any data
 - Accessing data
     - DOT notation: default when we know the property name at code time.
     - square Bracket notation: when key is dynamic or not a valid identifier.
+
+## Day-06
+#### We can not modify the acutal string using any method because the data type is primitive, which means that this data type can not be modified. All the methods creates a new string.
+- toUpperCase(): it convert the text to upper case.
+- toLowerCase(): This method converts the text to lower case.
+- trim(): This method removes whitespace from both ends of the string and returns a new string, without modifying the original string.
+- split(): This method split the string into an Array.
+- join(): This methods joins the Array into the string.
+- replace(): replace(pattern, replacement) => it returns a new string with one, some or all matches of a pattern replaced by replacement
