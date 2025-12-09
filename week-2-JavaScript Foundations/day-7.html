@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // - Practice 3 EASY problems:
+        // - Two Sum (logic version, not optimized)
+        const numArr = [1, 55, 2, 5, 66, 7, 11, 12];
+
+        const twoSum = (arr, target) => {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
+                    if (arr[i] + arr[j] === target) {
+                        return [i, j];
+                    }
+                }
+            }
+            return null;
+        }
+
+        console.log(twoSum(numArr, 12))
+
+        // - Find index of target value
+        const arr = ['u', 'j', 'u', 'k'];
+
+        const getIndex = (arr, target) => {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === target) {
+                    return i;
+                }
+            }
+            return -1
+        }
+
+        console.log(getIndex(arr, 'j'))
+
+        // - Check if array contains duplicates
+        // I have to loop through the Array
+        const checkDup = (arr) => {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
+                    if (arr[i] === arr[j]) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        console.log(checkDup(arr))
+    </script>
+</body>
+
+</html>

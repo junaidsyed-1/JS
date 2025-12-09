@@ -75,6 +75,16 @@
         - Capitalize the first letter of every word in a sentence
         - Convert a sentence to camelCase
 
+- Day-07 Review + DSA Warm-up (very light)
+    - DSA Concepts (Basic only)
+    - What is an algorithm?
+    - What is time complexity? (Just read)
+    - Why arrays are important for DSA
+    - Practice 3 EASY problems:
+        - Two Sum (logic version, not optimized)
+        - Find index of target value
+        - Check if array contains duplicates
+
 ## Day-01
 - Function Declarations VS Expressions
     - Function Declaration: is when we declare a function with syntax: function getValue(){}.
@@ -122,3 +132,13 @@ Objects are key-value containers where keys are string and value can be any data
 - split(): This method split the string into an Array.
 - join(): This methods joins the Array into the string.
 - replace(): replace(pattern, replacement) => it returns a new string with one, some or all matches of a pattern replaced by replacement
+
+## Day-07
+### What is an Algorithm?
+- An Algorithm is a series of step or set of instructions to get the desired output to solve a specific problem or perform a particular task. It typically begins with one or more input, processes these through a series of logical, computational, or decision making steps, and produces one or more outputs.
+
+### What is time Complexity?
+- Time complexity is the amount of time taken by an algorithm to run as a function of the length of the input.Note that the time to run is a function of the length of the input and not the actual execution time of the machine on which the algorithm is running on.
+
+### Why Arrays are important for DSA?
+- Arrays are important for DSA because they provide a simple, efficient and foundational way to store, retrieve and manipulate data. As a linear data structure, arrays store elements in contigous memory locations, enabling constant-time access to any element using its index, which is O(1).
