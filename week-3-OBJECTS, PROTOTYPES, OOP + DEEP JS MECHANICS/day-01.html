@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Create a user object with nested data
+        const person = {
+            name : "Junaid",
+            age: 25,
+            city : {
+                currentCity: "Delhi",
+                officeCity: "Noida"
+            }
+        };
+
+        // - Add & remove keys
+        const addObj = (obj, key, value) => {
+            obj[key] = value;
+            return obj;
+        }
+        addObj(person, "sport", "volleyball")
+        console.log(person)
+
+        // - Loop through the object
+        for(const data in person) {
+            console.log(data)
+        }
+
+        // - Write a function to return all keys
+        const getKeys = (obj) => {
+            return Object.keys(obj);
+        }
+        console.log(getKeys(person));
+
+        // - Write a function to merge two objects
+        const mergeObj = (obj1, obj2) => {
+            return {...obj1, ...obj2}
+        }
+        console.log(mergeObj(person, {occupdation : "Developer"}))
+
+    </script>
+</body>
+</html>
