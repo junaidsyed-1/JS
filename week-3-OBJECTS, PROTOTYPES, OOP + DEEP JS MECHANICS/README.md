@@ -29,8 +29,8 @@
 ### What is an Object?
 - The Object represents one of the Data Type in JS. It is used to store various keyed collection and more complex entitites, we store the data in key-value pair. We can create an Object by using the basic method Object(). 
 
-### What is Key-value paris?
-- Key-value paris are the fundamental and building blocks used to store and represent data, where key act as a unique identifier and is associated with a specific value.
+### What is Key-value pairs?
+- Key-value pairs are the fundamental and building blocks used to store and represent data, where key act as a unique identifier and is associated with a specific value.
 
 ### Accessing and Updating Values in Object
 - We can use various methods to access and update the value of an object, for instance we can use dot (.) or bracket ([]) notations to access the value of an Object. To update the value in an Object we can assign the new value for instance, using dot notation we can do => obj.key1 = newValue, and for bracket notation we can do => obj[key] = newValue
@@ -42,7 +42,7 @@
 - A value itself can be an Object, which gives us a nested object. And we can use dot or bracket notations to access and update.
 
 ### Looping Objects
-- We can use for in loops to loop through and object, The for..in loop loops over keys of an Ovject. We should use this only for plain objects, not array we should use for..of loop for that.
+- We can use for in loops to loop through and object, The for..in loop loops over keys of an Object. We should use this only for plain objects, not array we should use for..of loop for that.
 
 ### Object.keys(), Object.values(), Object.entries()
 - These methods convert the object into Arrays.
