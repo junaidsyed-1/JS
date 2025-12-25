@@ -1,5 +1,5 @@
 # This is the beginning of Week-02, We will learn JavaScript Foundations (Deepening core skills).
-- By the end of this week, you will feel confident with real JS logic, functions, arrays, loops, and you’ll write your first small project.
+- By the end of this week, we will feel confident with real JS logic, functions, arrays, loops, and we’ll write our first small project.
 
 ## Topics covered this week
 - Day-01 Functions Deep Dive
